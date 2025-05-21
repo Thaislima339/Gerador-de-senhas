@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Gerador de Senhas Seguras - Projeto Web</title>
+  <meta name="description" content="Gerador de senhas seguras com opções personalizadas, modo escuro e salvamento local.">
+  <link rel="icon" href="favicon.png" type="image/png" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <button id="toggle-tema">Modo Escuro</button>
+    <h1>Gerador de Senhas</h1>
+
+    <div class="output">
+      <input type="text" id="senha" readonly />
+      <button onclick="copiarSenha()">Copiar</button>
+    </div>
+
+    <div id="forcaSenha"></div>
+
+    <div class="opcoes">
+      <label>Tamanho: <input type="number" id="tamanho" value="12" min="4" max="30"></label><br/>
+      <label><input type="checkbox" id="maiusculas" checked> Incluir Maiúsculas</label><br/>
+      <label><input type="checkbox" id="minusculas" checked> Incluir Minúsculas</label><br/>
+      <label><input type="checkbox" id="numeros" checked> Incluir Números</label><br/>
+      <label><input type="checkbox" id="simbolos"> Incluir Símbolos</label>
+    </div>
+
+    <button onclick="gerarSenha()">Gerar Senha</button>
+
+    <h2>Senhas Salvas</h2>
+    <ul id="lista-senhas"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
