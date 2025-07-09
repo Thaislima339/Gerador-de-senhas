@@ -13,4 +13,4 @@ Um gerador de senhas simples e eficiente feito com HTML, CSS e JavaScript. Ideal
 Se liga, pra pegar o código no seu computador, abra seu terminal e cole esse comando:
 
 ```bash
-git clone https://github.com/Thaislima339/Gerador-de-senhas.git
+https://github.com/Thaislima339/Gerador-de-senhas.git
